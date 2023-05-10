@@ -1,2 +1,3 @@
-# Intelligent-Databases-
+# Intelligent-Databases
+
 Data Cleaning, Visualization, Modeling
