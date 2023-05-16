@@ -40,7 +40,7 @@ model2.score(test[['Weekly_Sales']], test[['Temperature']])
 print("score : ", model2.score(test[['Weekly_Sales']], test[['Temperature']]))
 model2.fit(train[['Weekly_Sales']], train[['Fuel_Price']])
 model2.score(test[['Weekly_Sales']], test[['Fuel_Price']])
-print("score : ", model2.score(test[['Weekly_Sales']], test[['Fuel_Price']]))
+print("score : ", model2.score(test[['Weekly_Sales']], test[['Fuel_Price']]) * 100.0)
 
 kmeans = KMeans(n_clusters=3)
 kmeans.fit(df[['Weekly_Sales']])

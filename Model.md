@@ -1,7 +1,6 @@
-# we will work on the mirged csv file
-
----
+    we will work on the mirged csv file
 # Background
+
 ---
 ## What is a model in ML?
 - A model is a mathematical representation of a real-world process.
@@ -30,3 +29,7 @@
 - SL aims to learn a function that, given a sample of data and ```desired outputs```, ```approximates``` a function that maps inputs to outputs.
 - Semi-SL aims to ```label unlabeled data``` points using knowledge learned ```from a small number of labeled data``` points.
 ---
+
+# What We Will Do?
+## We will work on the mirged csv file
+- 
