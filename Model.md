@@ -9,11 +9,14 @@
 ---
 ## What are the types of ML models?
 ![SL vs Semi-SL](https://cdn-clekk.nitrocdn.com/tkvYXMZryjYrSVhxKeFTeXElceKUYHeV/assets/images/optimized/rev-82dec77/wp-content/uploads/2021/05/machine-learning-types-infographics_1-2048x927.png)
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
-- Supervised Learning
-- Unsupervised Learning
-- Reinforcement Learning
-- Semi-supervised Learning
 ---
 ## What is Supervised Learning?
 - Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs.
