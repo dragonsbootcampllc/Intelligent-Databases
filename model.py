@@ -24,7 +24,7 @@ train, test = train_test_split(df, test_size=0.2)
 # model 1
 model = LinearRegression()
 # model 2 RandomForestModel
-model2 = RandomForestRegressor(n_estimators=100, max_depth=10, random_state=0)
+
 model.fit(train[['Weekly_Sales']], train[['Temperature']])
 model.score(test[['Weekly_Sales']], test[['Temperature']])
 print("score : ", model.score(test[['Weekly_Sales']], test[['Temperature']]))
@@ -33,6 +33,14 @@ model.fit(train[['Weekly_Sales']], train[['Fuel_Price']])
 model.score(test[['Weekly_Sales']], test[['Fuel_Price']])
 
 print("score : ", model.score(test[['Weekly_Sales']], test[['Fuel_Price']]))
+
+model2 = RandomForestRegressor(n_estimators=100, max_depth=10, random_state=0)
+model2.fit(train[['Weekly_Sales']], train[['Temperature']])
+model2.score(test[['Weekly_Sales']], test[['Temperature']])
+print("score : ", model2.score(test[['Weekly_Sales']], test[['Temperature']]))
+model2.fit(train[['Weekly_Sales']], train[['Fuel_Price']])
+model2.score(test[['Weekly_Sales']], test[['Fuel_Price']])
+print("score : ", model2.score(test[['Weekly_Sales']], test[['Fuel_Price']]))
 
 kmeans = KMeans(n_clusters=3)
 kmeans.fit(df[['Weekly_Sales']])
