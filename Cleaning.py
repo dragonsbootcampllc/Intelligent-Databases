@@ -125,3 +125,8 @@ merged_data = pd.merge(merged_data, fuel_data)
 
 # save the merged data set to a new csv file
 merged_data.to_csv("merged_data.csv", index=False)
+
+# see how many null values are in the merged data set
+print("\nMissing data in merged data:")
+print(merged_data.isnull().sum())
+
