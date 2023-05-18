@@ -233,13 +233,16 @@ brand_dept_sales = top_stores_data.groupby(["Store", "Category"])["Weekly_Sales"
 brand_dept_sales = brand_dept_sales.sort_values("Weekly_Sales", ascending=False)
 
 # bar plot to compare the average weekly sales for each brand department for the top 10 selling stores
-plt.figure(figsize=(15, 9))
+plt.figure(figsize=(23, 13))
 sns.barplot(x="Store", y="Weekly_Sales", hue="Category", data=brand_dept_sales)
 plt.title("Average Weekly Sales for Each Brand Department for the Top 10 Selling Stores")
 plt.xlabel("Store")
 plt.ylabel('Average Weekly Sales')
+# make the legend appear outside the plot area.
+plt.legend(bbox_to_anchor=(1.01, 1), loc=2, borderaxespad=0.)
+# make legend horizontal
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05), fancybox=True, shadow=True, ncol=25)
 plt.show()
-
 # --------------------------------------------------------------------------------------------- #
 # 7-Make a line chart to show the relationship between weekly sales and weather Temperature.
 
@@ -260,7 +263,7 @@ plt.show()
 temp_fuel_sales = merged_data.groupby(["Temperature", "Fuel_Price"])["Weekly_Sales"].mean().reset_index()
 
 # Plot the relationship between average weekly sales at different fuel costs and temperatures.
-plt.figure(figsize=(15, 9))
+plt.figure(figsize=(15, 10))
 sns.lineplot(x="Temperature", y="Weekly_Sales", hue="Fuel_Price", data=temp_fuel_sales)
 plt.title("Weekly Sales vs. Temperature at Different Fuel Costs")
 plt.xlabel("Temperature")
