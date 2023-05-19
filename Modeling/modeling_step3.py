@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 import math
 
 # Assuming you have a dataset named "merged_data"
-merged_data = pd.read_csv("merged_data.csv")
+merged_data = pd.read_csv("../merged_data.csv")
 
 # Preprocess the data
 merged_data['Date'] = pd.to_datetime(merged_data['Date'])

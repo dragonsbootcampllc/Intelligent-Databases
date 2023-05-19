@@ -1,6 +1,9 @@
 # Intelligent-Databases
 
-![accuracy](https://i.ibb.co/xLM8fcj/Screenshot-2023-05-19-201728.png)
+## <span style="color: red; ">Accuracy </span> 
+![Accuracy](https://i.ibb.co/xLM8fcj/Screenshot-2023-05-19-201728.png)
+## <span style="color: red; ">Representation char </span>
+![Representation char](https://i.ibb.co/0CYyKDD/Screenshot-2023-05-20-020037.png)
 ---
 Data Cleaning, Visualization, Modeling
 ---
