@@ -1,5 +1,7 @@
 # Intelligent-Databases
 
+![accuracy](https://i.ibb.co/xLM8fcj/Screenshot-2023-05-19-201728.png)
+---
 Data Cleaning, Visualization, Modeling
 ---
 
