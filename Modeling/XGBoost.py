@@ -32,7 +32,7 @@ def get_best_accuracy():
             y.append(data[i])
         return np.array(X), np.array(y)
 
-    # Define the number of time stepsto look back for each prediction
+    # Define the number of time steps to look back for each prediction
     look_back = 12
 
     # Create the features and targets for the training data

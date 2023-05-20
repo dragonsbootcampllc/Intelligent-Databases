@@ -25,6 +25,7 @@ def get_best_accuracy():
     train_data, test_data = train_test_split(filtered_data['Weekly_Sales'], test_size=0.2, shuffle=False)
 
     # Fit the SARIMA model
+    # seasonal_order => detect the pattern
     model = SARIMAX(train_data, order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
     model_fit = model.fit()
 
