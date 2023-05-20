@@ -29,7 +29,7 @@ print(fuel_data.head(10))
 print("\nBasic statistics for numeric columns in the fuel data:")
 print(fuel_data.describe())
 
-# mean
+# mean مجموعهم علي عددهم (المتوسط)
 print("\nMean of the sales data:")
 sales_mean = sales_data["Weekly_Sales"].mean()
 print(sales_mean)
@@ -38,7 +38,7 @@ print(weather_mean)
 fuel_mean = fuel_data["Fuel_Price"].mean()
 print(fuel_mean)
 
-# median
+# median العدد اللي في النص
 print("\nMedian of the sales data:")
 sales_median = sales_data["Weekly_Sales"].median()
 print(sales_median)
@@ -47,7 +47,7 @@ print(weather_median)
 fuel_median = fuel_data["Fuel_Price"].median()
 print(fuel_median)
 
-# count
+# count عدد العناصر
 print("\nCount of the sales data:")
 sales_count = sales_data["Weekly_Sales"].count()
 print(sales_count)
@@ -56,7 +56,7 @@ print(weather_count)
 fuel_count = fuel_data["Fuel_Price"].count()
 print(fuel_count)
 
-# std
+# std الانحراف المعياري
 print("\nStandard deviation of the sales data:")
 sales_std = sales_data["Weekly_Sales"].std()
 print(sales_std)
@@ -65,7 +65,7 @@ print(weather_std)
 fuel_std = fuel_data["Fuel_Price"].std()
 print(fuel_std)
 
-# min
+# min الاصغر
 sales_min = sales_data["Weekly_Sales"].min()
 print("\nThe minimum of the Weekly_Sales column is {:.2f}.".format(sales_min))
 weather_min = weather_data["Temperature"].min()
@@ -73,7 +73,7 @@ print("\nThe minimum of the Temperature column is {:.2f}.".format(weather_min))
 fuel_min = fuel_data["Fuel_Price"].min()
 print("\nThe minimum of the Fuel_Price column is {:.2f}.".format(fuel_min))
 
-# max
+# max الاكبر
 sales_max = sales_data["Weekly_Sales"].max()
 print("\nThe maximum of the Weekly_Sales column is {:.2f}.".format(sales_max))
 weather_max = weather_data["Temperature"].max()
@@ -81,6 +81,7 @@ print("\nThe maximum of the Temperature column is {:.2f}.".format(weather_max))
 fuel_max = fuel_data["Fuel_Price"].max()
 print("\nThe maximum of the Fuel_Price column is {:.2f}.".format(fuel_max))
 
+# Show the number of null values in each column
 print("\nMissing data in sales data:")
 print(sales_data.isnull().sum())
 print("\nMissing data in weather data:")
@@ -115,6 +116,8 @@ for col in fuel_data.columns:
         print("Number of incorrect values:")
         print(fuel_data[fuel_data[col] <= 0][col].count())
 
+
+# inplase = True (Don't Take a Copy)
 sales_data.dropna(inplace=True)
 weather_data.dropna(inplace=True)
 fuel_data.dropna(inplace=True)

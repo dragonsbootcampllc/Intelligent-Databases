@@ -93,3 +93,12 @@ Divides the data into training and testing categories (80 percent training data 
 Create two separate supervised learning models to forecast weekly sales based on specific characteristics.
 Compare the accuracy of the two models (in percentages).
 Create a clustering model to group together store categories with similar sales. Which number of Clusters is the best? Why?
+
+
+# plot
+
+
+
+# Which number of Clusters is the best? Why?
+
+3 or 4 clusters,
