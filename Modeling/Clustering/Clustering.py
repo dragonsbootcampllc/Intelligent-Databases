@@ -40,9 +40,10 @@ plt.show()
 # 3 clusters.
 
 # Fit the KMeans clustering model with 3 clusters
-kmeans = KMeans(n_clusters=3, init='k-means++', random_state=42)
-kmeans.fit(X_pca)
-
+kmeans = KMeans(n_clusters=10, init='k-means++', max_iter=300, n_init=10)
+y_kmeans = kmeans.fit_predict(X_scaled)
+df['Cluster'] = y_kmeans
+df.groupby('Cluster')['Weekly_Sales'].describe()
 # Add the cluster labels to the X_encoded dataframe
 X_encoded['Cluster'] = kmeans.labels_
 

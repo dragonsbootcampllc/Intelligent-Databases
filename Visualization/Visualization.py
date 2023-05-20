@@ -115,7 +115,7 @@ plt.title("Average Weekly Sales for Each Brand Department for the Top 10 Selling
 plt.xlabel("Store")
 plt.ylabel('Average Weekly Sales')
 # make the legend appear outside the plot area.
-plt.legend(bbox_to_anchor=(1.01, 1), loc=2, borderaxespad=0.)
+plt.legend(bbox_to_anchor=(3.01, 1), loc=2, borderaxespad=0.)
 # make legend horizontal
 plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05), fancybox=True, shadow=True, ncol=25)
 plt.show()
