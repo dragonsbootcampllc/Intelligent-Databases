@@ -36,7 +36,7 @@ plt.xlabel('Number of Clusters')
 plt.ylabel('WCSS')
 plt.show()
 
-# Based on the elbow plot, we can see that the optimal number ofclusters is 3 or 4. For this example, we will choose
+# Based on the elbow plot, we can see that the optimal number clusters is 3 or 4. For this example, we will choose
 # 3 clusters.
 
 # Fit the KMeans clustering model with 3 clusters
